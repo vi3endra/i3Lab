@@ -1,0 +1,117 @@
+.home-inner{
+  background-image: url(../img/landing1.png);
+  animation: slide 10s infinite;
+}
+@keyframes slide {
+  0%{
+    background-image: url(../assets/landing1.png);
+  }
+  33%{
+    background-image: url(../assets/landing2.png);
+  }
+  67%{
+    background-image: url(../assets/landing3.jpg);
+  }
+  100%{
+    background-image: url(../assets/landing1.png);
+  }
+}
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
+.caption h3{
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+.btn{
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 0.5rem 1.0rem;
+  font-size: 1rem;
+  color: white;
+}
+.btn:hover{
+  color: grey;
+}
+.landing{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+.home-outer{
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner{
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.i3{
+  padding: 2rem 2.4rem;
+  background-color: #dddddd;
+}
+.i3-row{
+  padding: 8px 4px;
+}
+.i3-inner{
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  padding: 8px 10px;
+  text-align: center;
+  background: -webkit-linear-gradient(#333333,#d63031);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.i3-head-row{
+  margin: 3rem 0;
+}
+.the3i{
+  margin: 12px auto;
+  text-align: center;
+  font-size: 2.8rem;
+  font-family: 'Lobster', cursive;
+  background: -webkit-linear-gradient(#666666,#5f27cd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.head-three-i h3{
+  font-family: monospace;
+  font-size: 4rem;
+  text-align: center;
+  background: -webkit-linear-gradient(#333333,#2980b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.carousel-inner img{
+	width: 100%;
+	height: 100%;
+}
+.carousel-item img{
+  height: 200px
+}
+#newsTag{
+  margin-left: 40px;
+}

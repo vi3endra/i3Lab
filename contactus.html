@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us | i3Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/master.css">
+  <script type="text/javascript" src="./js/master.js"></script>
+  <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 41.7%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+ </head>
+ <body style="background-color: black">
+   <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a href="./index.html" class="navbar-brand"><img src="./assets/logo.png" alt=""></a>
+          <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./bootcamp.html" class="nav-link">Bootcamps</a>
+              </li>
+              <li class="nav-item">
+                <a href="./gallery.html" class="nav-link">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a href="./aboutus.html" class="nav-link">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <br>
+ 	<section class="jumbotron text-center" style="background-image: radial-gradient(teal, black);">
+    <div class="container">
+        <h1 class="jumbotron-heading" style="color: white; font-size: 50px;">CONTACT US</h1>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-white" style="background-color: teal;"><i class="fa fa-envelope"></i> Contact Us.
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Your email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="6" required></textarea>
+                        </div>
+                        <div class="mx-auto">
+                        <button type="submit" class="btn text-right" style="background-color: teal;  color: white;">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="card bg-light mb-3">
+                <div class="card-header text-white text-uppercase" style="background-color: teal;"><i class="fa fa-home"></i> Address</div>
+                <div class="card-body">
+                    <p>Techno India NJR</p>
+                    <p>Udaipur(Raj.)</p>
+                    <p>India</p>
+                    <p>Email : i3lab@technonjr.org</p>
+                    <p>Tel. +0294 246 0000</p>
+                </div>
+            </div>
+            <div id="map" class="col-12 card mb-3 "> Map </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<!-- Start Footer -->
+  <div class="" id="contact">
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About</h5>
+          <p>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut sagittis sem, eget malesuada arcu. Nunc gravida id dolor quis pellentesque.
+            <br><br>
+          </p>
+          <p>
+            © 2018 i3Lab. All Rights Reserved.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <h6>Address:</h6>
+          <p>Techno India NJR Institute of Technology, Udaipur(Raj.)</p>
+          <h6>Email:</h6>
+          <p><a href="#" class="flink">i3Lab@technonjr.org</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links</h5>
+            <a href="./index.html" class="flink">Home</a><br>
+            <a href="./aboutus.html" class="flink">About Us</a><br>
+            <a href="./gallery.html" class="flink">Gallery</a><br>
+            <a href="https://www.technonjr.org" class="flink">Techno NJR Site</a><br>
+        </div>
+      </div><!-- End Row -->
+    </div><!-- End Container -->
+  </div><!-- End Footer -->
+<script>
+	var map;
+	function initMap() {
+	map = new google.maps.Map(document.getElementById('map'), {
+	center: {lat: 24.518402, lng: 73.752306},
+	zoom: 8
+	});
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0YEFAhKrh-XeYBPhpvVec6Xv4qQ-3ULY&callback=initMap"
+		async defer></script>
+ </body>
+ </html>
